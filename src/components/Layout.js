@@ -60,6 +60,28 @@ const TemplateWrapper = ({ children }) => (
         </Helmet>
         <Navbar />
         <div>{children}</div>
+        <footer className="section has-text-centered">
+          <a
+            className="button is-white"
+            href="https://www.facebook.com/agrocomunidade"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="icon">
+              <i className="fab fa-facebook-f" />
+            </span>
+          </a>
+          <a
+            className="button is-white"
+            href="https://www.instagram.com/agrocomunidade/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="icon">
+              <i className="fab fa-instagram" />
+            </span>
+          </a>
+        </footer>
       </div>
     )}
   />
