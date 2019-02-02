@@ -39,6 +39,15 @@ export const ProfileTemplate = ({
                 {university} <span className="is-size-7">{graduationYear}</span>
               </div>
             </div>
+            <button
+              className="button is-primary is-outlined"
+              style={{ margin: "1rem 0" }}
+            >
+              <span className="icon ">
+                <i className="far fa-envelope" />
+              </span>
+              <span>Chat</span>
+            </button>
             <div className="column">
               <div className="has-text-info is-size-7">Especialidades</div>
               <div className="tags" style={{ justifyContent: "center" }}>
