@@ -23,49 +23,53 @@ export const ProfileTemplate = ({
     <section className="section">
       {helmet || ""}
       <div className="container content">
-        <div className="columns">
-          <div className="column has-text-centered">
-            <figure className="image">
+        <div className="has-text-centered">
+          {avatar && (
+            <figure className="image" style={{ maxWidth: 400, margin: "auto" }}>
               <img
                 className="is-rounded"
                 alt="avatar"
-                src={avatar.childImageSharp.fluid.src}
+                src={
+                  avatar.childImageSharp
+                    ? avatar.childImageSharp.fluid.src
+                    : avatar
+                }
               />
             </figure>
-            <div className="is-size-2">{name}</div>
-            <div>
-              <span className="is-size-5">{job}</span>
-              <div className="has-text-grey">
-                {university} <span className="is-size-7">{graduationYear}</span>
-              </div>
-            </div>
-            <button
-              className="button is-primary is-outlined"
-              style={{ margin: "1rem 0" }}
-            >
-              <span className="icon ">
-                <i className="far fa-envelope" />
-              </span>
-              <span>Chat</span>
-            </button>
-            <div className="column">
-              <div className="has-text-info is-size-7">Especialidades</div>
-              <div className="tags" style={{ justifyContent: "center" }}>
-                {skills.map(skill => (
-                  <span key={skill} className="tag">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div className="column">
-              <div className="has-text-info is-size-7">Região</div>
-              <span className="tag">{region}</span>
+          )}
+          <div className="is-size-2">{name}</div>
+          <div>
+            <span className="is-size-5">{job}</span>
+            <div className="has-text-grey">
+              {university} <span className="is-size-7">{graduationYear}</span>
             </div>
           </div>
-          <div className="column is-paddingless">
-            <ProfileContent content={content} />
+          <button
+            className="button is-primary is-outlined"
+            style={{ margin: "1rem 0" }}
+          >
+            <span className="icon ">
+              <i className="far fa-envelope" />
+            </span>
+            <span>Chat</span>
+          </button>
+          <div className="column">
+            <div className="has-text-info is-size-7">Especialidades</div>
+            <div className="tags" style={{ justifyContent: "center" }}>
+              {skills.map(skill => (
+                <span key={skill} className="tag">
+                  {skill}
+                </span>
+              ))}
+            </div>
           </div>
+          <div className="column">
+            <div className="has-text-info is-size-7">Região</div>
+            <span className="tag">{region}</span>
+          </div>
+        </div>
+        <div style={{ marginTop: "2.5rem" }}>
+          <ProfileContent content={content} />
         </div>
       </div>
     </section>
