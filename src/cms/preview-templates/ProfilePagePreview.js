@@ -4,7 +4,7 @@ import { ProfileTemplate } from "../../templates/profile-page";
 
 const ProfilePagePreview = ({ entry, widgetFor, getAsset }) => {
   const entrySkills = entry.getIn(["data", "skills"]);
-  const skills = entrySkills ? entrySkills.toJS() : [];
+  const skills = entrySkills ? entrySkills : [];
   return (
     <ProfileTemplate
       content={widgetFor("body")}
