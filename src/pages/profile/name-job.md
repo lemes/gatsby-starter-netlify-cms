@@ -24,4 +24,4 @@ skills:
 
 ### Avaliação de clientes
 
-> _"Sempre responde com rapidez e faz o acompanhamento do problema de perto."_ Cláudio
+> _"Sempre responde com rapidez e faz o acompanhamento do problema de perto."_ **Cláudio**
