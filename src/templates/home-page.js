@@ -1,13 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { graphql } from "gatsby";
+import { Link, graphql } from "gatsby";
 
 import Layout from "../components/Layout";
-import { HTMLContent } from "../components/Content";
 
 import heroImage from "../img/agriculture-clouds-corn.jpg";
 
-export const HomePageTemplate = ({ title, subtitle, features }) => {
+export const HomePageTemplate = ({ title, subtitle, features = [] }) => {
   return (
     <>
       <section
@@ -25,23 +24,32 @@ export const HomePageTemplate = ({ title, subtitle, features }) => {
         }}
       >
         <div className="container" style={{ maxWidth: 400 }}>
-          <h1 className="title has-text-centered has-text-white has-text-weight-bold">
+          <h1 className="title is-spaced has-text-centered has-text-white has-text-weight-bold">
             {title}
           </h1>
           <h2 className="subtitle has-text-centered has-text-white has-text-weight-bold">
             {subtitle}
           </h2>
           <div className="field">
-            <input className="input" type="text" placeholder="Text input" />
+            <input
+              className="input"
+              type="text"
+              placeholder="Área: milho, gado, pastagem, gestāo..."
+            />
           </div>
           <div className="field">
-            <input className="input" type="text" placeholder="Text input" />
+            <input
+              className="input"
+              type="text"
+              placeholder="Regiāo: Uberaba, Alto Paranaíba, Sāo Carlos..."
+            />
           </div>
-          <input
-            className="button is-primary"
-            type="submit"
-            value="Submit input"
-          />
+          <Link className="button" to="/profiles">
+            <span className="icon">
+              <i className="fas fa-search" />
+            </span>
+            <span>Pesquisar</span>
+          </Link>
         </div>
       </section>
       <section className="section">
@@ -53,7 +61,7 @@ export const HomePageTemplate = ({ title, subtitle, features }) => {
                   <span className="icon">
                     <i className={feature.icon} />
                   </span>
-                  {feature.title}
+                  <span className="has-text-weight-bold">{feature.title}</span>
                 </div>
                 <div className="has-text-justified">{feature.description}</div>
               </div>
@@ -65,13 +73,25 @@ export const HomePageTemplate = ({ title, subtitle, features }) => {
   );
 };
 
+// Note: Currently validation doesn't work on nested fields
+const FeaturePropTypes = PropTypes.shape({
+  title: PropTypes.string,
+  icon: PropTypes.string,
+  description: PropTypes.string
+});
+
+HomePageTemplate.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+  features: PropTypes.arrayOf(FeaturePropTypes).isRequired
+};
+
 const HomePage = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
     <Layout>
       <HomePageTemplate
-        contentComponent={HTMLContent}
         title={post.frontmatter.title}
         subtitle={post.frontmatter.subtitle}
         features={post.frontmatter.features}
