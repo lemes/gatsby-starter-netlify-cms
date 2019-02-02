@@ -28,6 +28,9 @@ collections:
           label: "Graduated on (Year)",
           name: "graduationYear",
           widget: "number",
+          valueType: "int",
+          min: 1920,
+          max: 2099,
         }
       - { label: "Region", name: "region", widget: "string" }
       - { label: "Skills", name: "skills", widget: "list" }
