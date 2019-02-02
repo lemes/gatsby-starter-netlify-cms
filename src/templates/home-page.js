@@ -44,7 +44,7 @@ export const HomePageTemplate = ({ title, subtitle, features = [] }) => {
               placeholder="Regiāo: Uberaba, Alto Paranaíba, Sāo Carlos..."
             />
           </div>
-          <Link className="button" to="/profiles">
+          <Link className="button is-primary" to="/profiles">
             <span className="icon">
               <i className="fas fa-search" />
             </span>
