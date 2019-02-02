@@ -53,8 +53,8 @@ collections:
               widget: list,
               fields:
                 [
-                  { label: "FontAwesome Icon", name: icon, widget: string },
                   { label: Title, name: title, widget: string },
+                  { label: "FontAwesome Icon", name: icon, widget: string },
                   { label: Body, name: description, widget: text },
                 ],
             }
