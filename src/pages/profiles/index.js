@@ -5,7 +5,7 @@ import Layout from "../../components/Layout";
 
 const ProfileItem = ({ slug, avatar, name, job, skills, region }) => (
   <Link to={slug}>
-    <div className="card" style={{ padding: 8 }}>
+    <div className="card" style={{ padding: 8, marginBottom: 8 }}>
       <div className="columns is-mobile">
         <div className="column is-narrow">
           <figure className="image is-96x96 is-marginless">
