@@ -58,7 +58,7 @@ const ProfileListPage = ({
   return (
     <Layout>
       <section className="section">
-        <Helmet title={`Profiles`} />
+        <Helmet title={`Especialistas`} />
         <div className="container content" style={{ maxWidth: 400 }}>
           {edges.map(edge => (
             <ProfileItem
