@@ -1,13 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { graphql } from "gatsby";
+import { Link, graphql } from "gatsby";
 import { navigate } from "gatsby-link";
 
 import Layout from "../components/Layout";
 
 import heroImage from "../img/agriculture-clouds-corn.jpg";
 
-export const HomePageTemplate = ({ title, subtitle, features = [] }) => {
+export const HomePageTemplate = ({
+  title,
+  subtitle,
+  features = [],
+  posts = []
+}) => {
   function onSubmit(e) {
     e.preventDefault();
     const form = e.target;
@@ -90,6 +95,36 @@ export const HomePageTemplate = ({ title, subtitle, features = [] }) => {
           </div>
         </div>
       </section>
+      <section className="section">
+        <div className="container">
+          <div className="content">
+            <h1 className="has-text-weight-bold is-size-3">Últimas Notícias</h1>
+          </div>
+          {posts.map(({ node: post }) => (
+            <div
+              className="content"
+              style={{ border: "1px solid #333", padding: "2em 4em" }}
+              key={post.id}
+            >
+              <p>
+                <Link className="has-text-primary" to={post.fields.slug}>
+                  {post.frontmatter.title}
+                </Link>
+                <span> &bull; </span>
+                <small>{post.frontmatter.date}</small>
+              </p>
+              <p>
+                {post.excerpt}
+                <br />
+                <br />
+                <Link className="button is-small" to={post.fields.slug}>
+                  Leia mais →
+                </Link>
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
     </>
   );
 };
@@ -104,18 +139,23 @@ const FeaturePropTypes = PropTypes.shape({
 HomePageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
-  features: PropTypes.arrayOf(FeaturePropTypes).isRequired
+  features: PropTypes.arrayOf(FeaturePropTypes).isRequired,
+  posts: PropTypes.array.isRequired
 };
 
 const HomePage = ({ data }) => {
-  const { markdownRemark: post } = data;
+  const {
+    markdownRemark: home,
+    allMarkdownRemark: { edges: posts }
+  } = data;
 
   return (
     <Layout>
       <HomePageTemplate
-        title={post.frontmatter.title}
-        subtitle={post.frontmatter.subtitle}
-        features={post.frontmatter.features}
+        title={home.frontmatter.title}
+        subtitle={home.frontmatter.subtitle}
+        features={home.frontmatter.features}
+        posts={posts}
       />
     </Layout>
   );
@@ -138,6 +178,25 @@ export const homePageQuery = graphql`
           icon
           title
           description
+        }
+      }
+    }
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+    ) {
+      edges {
+        node {
+          excerpt(pruneLength: 400)
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            templateKey
+            date(formatString: "MMMM DD, YYYY")
+          }
         }
       }
     }
