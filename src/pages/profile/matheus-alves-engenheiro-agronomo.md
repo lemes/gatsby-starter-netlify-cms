@@ -1,6 +1,6 @@
 ---
 templateKey: profile-page
-avatar: /img/man-avatar.png
+avatar: /img/otsoue0.jpg
 name: Matheus Alves
 job: Engenheiro Agrônomo
 university: Unesp
