@@ -12,7 +12,7 @@ features:
       Faça orçamentos e descubra as análises necessárias para o diagnóstico
       efetivo em campo. 
     icon: fas fa-users
-    title: Receba pré atendimento
+    title: Receba pré-atendimento
   - description: >-
       Faça parte da rede colaborativa de informações sobre pragas e doenças e
       realize o monitoramento para controle no momento certo.
