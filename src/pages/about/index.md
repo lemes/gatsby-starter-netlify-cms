@@ -2,7 +2,7 @@
 templateKey: about-page
 title: Sobre nós
 ---
-**A agro comunidade está focada em integrar o agronegócio. **
+**A agro comunidade está focada em integrar o agronegócio.**
 
 Através de uma assistência técnica de qualidade, você consegue reduzir o custo de produção e aumentar a produtividade. 
 
