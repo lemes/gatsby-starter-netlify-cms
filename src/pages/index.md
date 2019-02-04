@@ -5,7 +5,7 @@ subtitle: Agrônomos • Veterinários • Zootecnistas
 features:
   - description: >
       Busque por profissionais para solucionar problemas e otimizar a produção.
-      Avalie o pré atendimento online e a visita em campo recebida.
+      Avalie o pré-atendimento online e a visita em campo recebida.
     icon: fas fa-search
     title: Encontre profissionais técnicos
   - description: >
