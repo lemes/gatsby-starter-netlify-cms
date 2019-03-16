@@ -17,7 +17,7 @@ features:
       Faça parte da rede colaborativa de informações sobre pragas e doenças e
       realize o monitoramento para controle no momento certo.
     icon: fas fa-map-marked-alt
-    title: Monitoramento regional de pragas e doenças
+    title: Monitoramento regional de pragas e doenças (Em breve)
   - description: 'Esteja sempre atualizado com novidades de melhoria no sistema produtivo. '
     icon: fas fa-file-alt
     title: 'Acesso à informação '
