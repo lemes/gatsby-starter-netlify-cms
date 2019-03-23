@@ -6,6 +6,8 @@ import Navbar from "../components/Navbar";
 import "./all.sass";
 import "./fontawesome.sass";
 
+const GA_MEASUREMENT_ID = 'UA-136390542-1'
+
 const TemplateWrapper = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -27,6 +29,22 @@ const TemplateWrapper = ({ children }) => (
             name="description"
             content={data.site.siteMetadata.description}
           />
+
+          {/* <!-- Global Site Tag (gtag.js) - Google Analytics --> */ }
+          <script
+            async
+            src={
+              `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`
+            }>
+          </script>
+          <script>{`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+          </script>
 
           <link
             rel="apple-touch-icon"
