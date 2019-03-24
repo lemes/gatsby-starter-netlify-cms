@@ -7,7 +7,8 @@ description: |-
 
   Escrito por:  Camila Souza
 tags:
-  - modo de ação; Camila Souza
+  - modo de ação
+  - Camila Souza
 ---
 Atualmente escutamos um burburinho falando que determinado produto não é tão bom mais ou não conseguiu controlar alguma praga. 
 
