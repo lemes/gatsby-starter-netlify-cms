@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Vacas com cãibra devem ser tratada com cirurgia
+title: Momento ideal para adquirir silagem
 date: 2019-03-24T10:04:00.000Z
 description: >-
   Com o planejamento sendo realizado dentro da propriedade, esse momento é
