@@ -1,18 +1,24 @@
 ---
 templateKey: blog-post
-title: Irrigação artesanal é destaque no Semiárido
-date: 2019-01-02T15:04:00.000Z
-description: >-
-  Novo método artesanal e de baixo custo está ganhando destaque na região
-  semiárida. A criação é de origem de um projeto denominado Mudas. A região
-  sofre cada vez mais com a falta de água.
+title: Importância da rotação de defensivos para garantir eficiência
+date: 2019-03-24T10:04:00.000Z
+description: |-
+  Proteja a sua produtividade garantindo as boas práticas em campo.
+
+  Escrito por:  Camila Souza
 tags:
-  - irrigação
+  - modo de ação; Camila Souza
 ---
-![flavor wheel](/img/projeto-mudas.jpeg)
+Atualmente escutamos um burburinho falando que determinado produto não é tão bom mais ou não conseguiu controlar alguma praga. 
 
-A novidade se dá devido ao sistema de irrigação, desenvolvido por Kevin Brasil, que utiliza a água sem gerar desperdício, além de possuir um baixo custo de implantação, chegando a 95% menos que os demais sistemas existentes no mercado. Isso ocasionou a produção de áreas, que antes eram consideradas improdutivas.
+O motivo disso acontecer é que o uso de apenas um produto ou o revezamento entre produtos que agem no inseto da mesma forma durante suas gerações, acaba selecionando naturalmente os insetos que possuem resistência. Assim, uma nova geração de insetos que são mais fortes acaba infestando o campo. 
 
- O sistema inclui uso de mangueiras, com pequenos furos, onde são encaixados micro-aspersores totalmente artesanais. Eles são feitos com palitos de pirulito, pregos e arames e funcionam como pulverizadores: ao chegar na cabeça do prego, a água se dispersa em gotículas. Além do sistema de irrigação em si, um sensor de umidade do solo também faz parte do sistema. 
+É possível evitar isso ou pelo menos dificultar a possibilidade de isso acontecer, seguindo as recomendações da bula, com dosagem e modo de aplicação correto e o mais importante, com a rotação ou associação de produtos que não possuem o mesmo modo de ação. As embalagens estão sendo atualizadas e é possível verificar se pertencem ao mesmo grupo de modo de ação de maneira fácil e rápida.
 
-**Fonte:** Revista Globo Rural <https://revistagloborural.globo.com/Noticias/Sustentabilidade/noticia/2018/08/com-irrigacao-artesanal-e-de-baixo-custo-semiarido-tem-novos-produtores.html>
+![modo de ação](/img/img-o-que-mudou.png)
+
+Fonte: ANDEF
+
+Você pode pedir informações e confirmar se está fazendo isso corretamente com o Agrônomo que te fará a recomendação ou no momento em que for comprar o produto.
+
+Boas práticas no campo beneficiam você e o meio ambiente.
