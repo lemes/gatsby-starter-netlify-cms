@@ -6,13 +6,14 @@ description: >-
   Com o planejamento sendo realizado dentro da propriedade, esse momento é
   destaque a produção de silagem. 
 
-  Escrito por **Camila Souza**.
+  Escrito por Camila Souza.
 tags:
   - silagem
   - bovinos
   - vaca
   - volumoso
   - Uberaba
+  - Camila Souza
 ---
 O favorecimento das chuvas durante os últimos meses contribuiu para a produção de forragem, que será ensilado nas próximas semanas, para garantir a alimentação dos animais, no período das secas que está se aproximando.
 
