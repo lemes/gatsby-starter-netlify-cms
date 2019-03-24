@@ -1,18 +1,21 @@
 ---
 templateKey: blog-post
 title: Vacas com cãibra devem ser tratada com cirurgia
-date: 2019-03-02T16:04:00.000Z
-description: Problema que parece simples não é tratado com remédio.
+date: 2019-03-24T10:04:00.000Z
+description: >-
+  Com o planejamento sendo realizado dentro da propriedade, esse momento é
+  destaque a produção de silagem. 
+
+  Escrito por **Camila Souza**.
 tags:
-  - cãibras
+  - silagem
   - bovinos
   - vaca
+  - volumoso
+  - Uberaba
 ---
-A luxação da paleta, conhecida popularmente como cãibra, apesar de ser comum em rebanhos e não ser tão grave é resolvido apenas por cirurgia. O procedimento deve ser realizado por um médico veterinário, é simples e o animal se recupera em 2 dias. Caso não tratado, pode resultar em dificuldade de movimentos, desconforto e problemas no casco. 
+O favorecimento das chuvas durante os últimos meses contribuiu para a produção de forragem, que será ensilado nas próximas semanas, para garantir a alimentação dos animais, no período das secas que está se aproximando.
 
-**Fonte:** Revista Globo Rural
-<https://revistagloborural.globo.com/vida-na-fazenda/gr-responde/noticia/2017/03/como-tratar-caibras-em-vacas.html>
+O produtor que não produz volumoso e tem como objetivo comprar, deve se atentar para o período de compra, o cenário pode mudar muito. Muitos produtores deixam para comprar quando se inicia o período da seca, que acaba encontrando o produto com alto valor no mercado. Agora é uma chance para adquirir o volumoso e ensilar na própria propriedade, reduzindo custos.
 
-Patrocinado:  
-
-![](/img/asset-2nutremais.jpg "logo nutremais")
+Adquirir agora não traz somente economia, ensilando o material na propriedade garante a qualidade do produto para o momento do consumo dos animais, sendo a perda menor devido ao armazenamento próximo ao local de fornecimento aos animais, evitando grande contato com o ar e água.
