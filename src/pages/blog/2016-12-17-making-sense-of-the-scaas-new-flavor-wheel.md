@@ -9,6 +9,8 @@ description: |-
 tags:
   - modo de ação
   - Camila Souza
+  - defensivo agrícola
+  - Uberaba
 ---
 Atualmente escutamos um burburinho falando que determinado produto não é tão bom mais ou não conseguiu controlar alguma praga. 
 
