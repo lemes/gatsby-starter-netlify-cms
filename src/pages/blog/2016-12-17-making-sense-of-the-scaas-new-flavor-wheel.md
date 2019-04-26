@@ -5,10 +5,10 @@ date: 2019-03-24T10:04:00.000Z
 description: |-
   Proteja a sua produtividade garantindo as boas práticas em campo.
 
-  Escrito por  Camila Souza.
+  Escrito por  Matheus Alves.
 tags:
   - modo de ação
-  - Camila Souza
+  - Matheus Alves
   - defensivo agrícola
   - Uberaba
 ---
